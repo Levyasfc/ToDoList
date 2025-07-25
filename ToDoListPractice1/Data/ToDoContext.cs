@@ -11,8 +11,9 @@ namespace ToDoListPractice1.Data
         {
         }
 
-        public DbSet<Tarea> Tareas { get; set; }
+        #region tablas
+        public DbSet<Tarea> Tareas { get; set; } // Creacion de la tabla de tareas
 
-
+        #endregion
     }
 }

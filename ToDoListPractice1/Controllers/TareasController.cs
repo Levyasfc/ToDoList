@@ -15,7 +15,7 @@ namespace ToDoListPractice1.Controllers
     [Route("[controller]")]
     public class TareasController: ControllerBase
     {
-        private readonly ToDoContext _context;
+        private readonly ToDoContext _context; // Instancia de la clase ToDoContext para acceder a la base de datos
 
         public TareasController(ToDoContext context)
         {
