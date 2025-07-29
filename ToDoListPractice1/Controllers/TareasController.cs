@@ -67,7 +67,7 @@ namespace ToDoListPractice1.Controllers
             var tareaExistente = await _context.Tareas.FindAsync(id);
             if (tareaExistente == null)return NotFound("Tarea no encontrada."); // Funcion Rapida
 
-            tareaExistente.Nombre = tareaActualizada.Nombre;
+            tareaExistente.Labor = tareaActualizada.Labor;
             tareaExistente.Descripcion = tareaActualizada.Descripcion;
             tareaExistente.Completado = tareaActualizada.Completado;
 
